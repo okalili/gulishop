@@ -25,3 +25,5 @@ mysql -u root -p
 enter password:
 rootroot
 
+quit;（一定要加分号）
+
