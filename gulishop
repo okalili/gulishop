@@ -33,8 +33,15 @@ vagrant reload
 修改后测试
 virtual   ping 192.168.56.1
   
-  virtual ip addr
- windows     ping
+virtual ip addr
+  3: eth1: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UP group default qlen 1000
+    link/ether 08:00:27:7c:92:83 brd ff:ff:ff:ff:ff:ff
+    inet 192.168.56.10/24 brd 192.168.56.255 scope global noprefixroute eth1
+       valid_lft forever preferred_lft forever
+    inet6 fe80::a00:27ff:fe7c:9283/64 scope link
+       valid_lft forever preferred_lft forever
+  
+ windows     ping 192.168.56.10
 
 ---------------------------------------------------------------------------------------------------
 docker pull mysql:5.7
