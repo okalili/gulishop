@@ -104,4 +104,11 @@ enter password:
 rootroot
 
 quit;（一定要加分号）
+---------------------------------------------------------------------------------------------------
+download navicat
+host:192.168.56.10
+edit connection test
+port :3306
+password 123456
+
 
