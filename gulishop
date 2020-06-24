@@ -2,7 +2,7 @@
 
 docker pull mysql:5.7
 su root
-docker run -p 3306:3306 --name mysql  -v /mydata/mysql/log:/var/log/mysql  -v /mydata/mysql/data:/var/lib/mysql -v /mydata/mysql/conf:/etc/mysql -e MYSQL_ROOT_PASSWORD=root  -d mysql:5.7
+docker run -e MYSQL_ROOT_PASSWORD=123456 -p 3306:3306 --name mysql  -v /mydata/mysql/log:/var/log/mysql  -v /mydata/mysql/data:/var/lib/mysql -v /mydata/mysql/conf:/etc/mysql -d mysql:5.7
 
 docker ps
 
