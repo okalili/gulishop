@@ -44,6 +44,35 @@ virtual ip addr
  windows     ping 192.168.56.10
 
 ---------------------------------------------------------------------------------------------------
+
+在虚拟机centos上安装Docker
+ 参考Docker官方文档：https://docs.docker.com/install/linux/docker-ce/centos/；
+
+2.1 卸载旧版本docker：
+
+$ sudo yum remove docker \
+                  docker-client \
+                  docker-client-latest \
+                  docker-common \
+                  docker-latest \
+                  docker-latest-logrotate \
+                  docker-logrotate \
+                  docker-engine
+2.2 安装Docker CE：
+
+#安装需要的包
+sudo yum install -y yum-utils device-mapper-persistent-data lvm2
+
+#安装repo
+sudo yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
+　　
+#安装DockerCE
+sudo yum install docker-ce docker-ce-cli containerd.io
+
+2.3 运行Docker
+sudo systemctl start docker
+sudo docker version
+-----------------------------------------------------------------------------------
 docker pull mysql:5.7
 su root
 docker run --name mysql  -p 3306:3306   -v /mydata/mysql/log:/var/log/mysql  -v /mydata/mysql/data:/var/lib/mysql -v /mydata/mysql/conf:/etc/mysql  -e MYSQL_ROOT_PASSWORD=123456 -d mysql:5.7
