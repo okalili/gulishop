@@ -10,6 +10,31 @@ vagrant ssh
 vagrant reload
 
 exit
+---------------------------------------------------------------------------------------------------
+网络文件配置修改
+C:\Users\cellp>  find vagrantfile 
+edit vagrantfile 
+config.vm.network "private_network", ip: "192.168.56.10"  (match ipv4 address)
+windows 
+ipconfig 
+
+Ethernet adapter VirtualBox Host-Only Network:
+
+   Connection-specific DNS Suffix  . :
+   Link-local IPv6 Address . . . . . : fe80::b5eb:f06a:bd46:dc77%12
+   IPv4 Address. . . . . . . . . . . : 192.168.56.1
+   Subnet Mask . . . . . . . . . . . : 255.255.255.0
+   Default Gateway . . . . . . . . . :
+
+   
+vagrant reload
+
+---------------------------------------------------------------------------------------------------
+修改后测试
+virtual   ping 192.168.56.1
+  
+  virtual ip addr
+ windows     ping
 
 ---------------------------------------------------------------------------------------------------
 docker pull mysql:5.7
