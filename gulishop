@@ -1,5 +1,6 @@
 
 ---------------------------------------------------------------------------------------------------
+control+L 清空
 Docker 在线练习的网站
 https://labs.play-with-docker.com/
 
@@ -117,5 +118,12 @@ mkdir -p /mydata/redis/conf
 touch /mydata/redis/conf/redis.conf
 //通过/etc/redis/redis.conf启动
 docker run -p 6379:6379 --name redis  -v /mydata/redis/data:/data  -v /mydata/redis/conf/redis.conf:/etc/redis/redis.conf  -d redis redis-server /etc/redis/redis.conf
-
-
+测试
+docker exec -it redis redis-cli
+set a b
+get a 
+exit
+---------------------------------------------------------------------------------------------------
+持久化存储
+vi redis.conf
+appendonly yes
