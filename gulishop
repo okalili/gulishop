@@ -142,3 +142,5 @@ vs code
 ---------------------------------------------------------------------------------------------------
 
 install git  and github
+git config --global user.name "sunchongwen"
+git config --global user.email "593091614sun@gmail.com"
