@@ -127,3 +127,6 @@ exit
 持久化存储
 vi redis.conf
 appendonly yes
+
+
+docker restart redis
