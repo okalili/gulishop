@@ -1,3 +1,9 @@
 1. project->right click->git -> commit 填好msg->commit and push 
 2. run maven
 root->compile
+
+打开settings 直接搜索Fully Expand Tree Node，再keymap目录下  ->  <- 都可以
+
+settings–>keymap–>Fully Expand Tree Node 选中要展开的目录，然后按下自己设置的快捷键就可以展开所有目录 默认小键盘*
+
+settings–>keymap–>Collapse Node 选中要收缩的目录，然后按下自己设置的快捷键就可以收缩选中目录下的所有子目录 默认小键盘-
