@@ -10,3 +10,5 @@ variable value ：F:\360\apache-maven-3.6.3-bin\apache-maven-3.6.3
 2
 path 里面添加 
 %MAVEN_HOME%\bin
+
+cmd  mvn -v 
