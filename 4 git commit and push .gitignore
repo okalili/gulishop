@@ -1,0 +1,9 @@
+1 project right click -> setting->git ->repository->push
+2 
+**/mvnw
+**/mvnw.cmd
+
+**/.mvn
+**/target/
+.idea
+**/.gitignore
