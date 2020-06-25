@@ -42,5 +42,9 @@ F:\360\apache-maven-3.6.3-bin\apache-maven-3.6.3\conf\setting.xml
 --------------------------------------------------------
 安装idea
 17
-plugin
-lombok +mybatisx
+configuration-》
+1 plugin  lombok +mybatisx
+2 setting search maven
+
+3 get version control
+输入账号密码
