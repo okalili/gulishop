@@ -110,5 +110,12 @@ host:192.168.56.10
 edit connection test
 port :3306
 password 123456
+---------------------------------------------------------------------------------------------------
+docker pull redis
+
+mkdir -p /mydata/redis/conf
+touch /mydata/redis/conf/redis.conf
+//通过/etc/redis/redis.conf启动
+docker run -p 6379:6379 --name redis  -v /mydata/redis/data:/data  -v /mydata/redis/conf/redis.conf:/etc/redis/redis.conf  -d redis redis-server /etc/redis/redis.conf
 
 
