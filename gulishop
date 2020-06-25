@@ -105,6 +105,7 @@ enter password:
 rootroot
 
 quit;（一定要加分号）
+sudo docker update mysql --restart=always  自启动
 ---------------------------------------------------------------------------------------------------
 download navicat
 host:192.168.56.10
@@ -130,6 +131,7 @@ appendonly yes
 
 
 docker restart redis
+sudo docker update redis --restart=always  自启动
 ---------------------------------------------------------------------------------------------------
 
 jdk 1.8 maven 3.6
