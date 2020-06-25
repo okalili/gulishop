@@ -130,3 +130,15 @@ appendonly yes
 
 
 docker restart redis
+---------------------------------------------------------------------------------------------------
+
+jdk 1.8 maven 3.6
+
+idea 
+1 lombok 2 mybatisx or mybatis plugin
+vs code 
+1 auto close tag 2 auto rename tag 3 eslint 4 html css support   5 html snippets 6javascript es6 code snippets 7live server 8 open in browser 9 vetur
+
+---------------------------------------------------------------------------------------------------
+
+install git  and github
