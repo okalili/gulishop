@@ -152,3 +152,6 @@ git init
 git add .
 git commit -m "msg"
 git push -u origin master
+---------------------------------------------------------------------------------------------------
+IDEA 
+file->new ->project from version control
