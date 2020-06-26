@@ -1,0 +1,31 @@
+人人开源
+----------------------------------------------------------------
+admin back-end
+git clone https://gitee.com/renrenio/renren-fast.git;
+git clone https://gitee.com/renrenio/renren-generator.git;
+git clone https://gitee.com/renrenio/renren-fast-vue.git;
+----------------------------------------------------------------
+renren-fast copy ->gulimall 
+执行mysql.sql 到数据库
+----------------------------------------------------------------
+resources->application-dev.yml-> ip dbname username password
+url: jdbc:mysql://192.168.56.10:3306/gulimall_admin?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai
+username: root
+password: 123456
+
+root
+pom.xml
+  <modules>
+    <module>gulimall-coupon</module>
+    <module>gulimall-member</module>
+    <module>gulimall-order</module>
+    <module>gulimall-product</module>
+    <module>gulimall-ware</module>
+    <module>renren-fast</module>
+    <module>renren-generator</module>
+  </modules>
+----------------------------------------------------------------
+vue front-end
+git clone https://gitee.com/renrenio/renren-fast-vue.git;
+npm install
+npm run serve
