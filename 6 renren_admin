@@ -50,3 +50,9 @@ netstat -ano | findstr 8080
 
 >taskkill /pid 3400 /f
 SUCCESS: The process with PID 3400 has been terminated.
+
+在build/webpack.base.conf.js文件中，注释或者删除掉：module->rules中有关eslint的规则
+
+ module: {
+    rules: [
+      // ...(config.dev.useEslint ? [createLintingRule()] : []),
