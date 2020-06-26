@@ -29,3 +29,17 @@ vue front-end
 git clone https://gitee.com/renrenio/renren-fast-vue.git;
 npm install
 npm run serve
+----------------------------------------------------------------
+安装或许出现问题  node-sass包下载不了   版本问题  很坑爹
+
+卸载；node-sass已有的依赖
+npm uninstall --save node-sass
+
+清除缓存
+npm cache clean -f
+
+升级node-sass模块
+npm install --save node-sass
+
+以后遇到问题报错,认真读,利用复制粘贴,一开始以为是 sass和sassloader
+----------------------------------------------------------------
