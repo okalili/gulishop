@@ -43,3 +43,10 @@ npm install --save node-sass
 
 以后遇到问题报错,认真读,利用复制粘贴,一开始以为是 sass和sassloader
 ----------------------------------------------------------------
+8080端口占用问题
+netstat -ano | findstr 8080
+  TCP    0.0.0.0:8080           0.0.0.0:0              LISTENING       3400
+  TCP    [::]:8080              [::]:0                 LISTENING       3400
+
+>taskkill /pid 3400 /f
+SUCCESS: The process with PID 3400 has been terminated.
