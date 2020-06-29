@@ -38,3 +38,11 @@ renren-generator-》run  enrenApplication
 生成代码
 
 复制 src 里面的main
+
+pom.xml
+  <dependency>
+            <groupId>com.atguigu.gulimall</groupId>
+            <artifactId>gulimall-common</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+加入这个依赖
