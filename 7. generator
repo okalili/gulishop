@@ -46,3 +46,28 @@ pom.xml
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
 加入这个依赖
+-------------------------------------------------------------
+代码不报错
+配置数据库 这样可以测试操作数据库
+
+新建application.yml
+spring:
+  datasource:
+    username: root
+    password: 123456
+    url: jdbc:mysql://169.254.252.10:3306/gulimall_sms
+    driver-class-name: com.mysql.jdbc.Driver
+mybatis-plus:
+  mapper-locations: classpath:/mapper/**/*.xml
+  global-config:
+    db-config:
+      id-type: auto
+
+#      自增主键
+-------------------------------------------------------------
+
+complier java error
+
+setting -project 8 java 8
+and
+control +alter +shift +s 1.8 版本相同
