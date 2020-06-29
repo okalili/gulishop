@@ -71,3 +71,7 @@ complier java error
 setting -project 8 java 8
 and
 control +alter +shift +s 1.8 版本相同
+-------------------------------------------------------------
+mybatis--UnsatisfiedDependencyException: Error creating bean with--解决方案
+
+多是mapper 那里配置有问题导致 程序无法运行
